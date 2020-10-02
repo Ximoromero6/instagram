@@ -106,9 +106,20 @@ main {
                         height: 50px;
                         border-radius: 50%;
                         object-fit: cover;
+                        background: linear-gradient(#ffffff, #ffffff) padding-box, /*this is your grey background*/
+                        linear-gradient(to right, #fcb045, #fd1d1d, #833ab4) border-box;
+                        border: 2px solid transparent;
+                        display: inline-block;
+                        padding: 2px;
                     }
                 }
                 &:first-child {
+                    a {
+                        img {
+                            border: none;
+                            background: none;
+                        }
+                    }
                     position: relative;
                     label.black {
                         position: absolute;
