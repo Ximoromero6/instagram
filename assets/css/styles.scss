@@ -16,7 +16,8 @@ body {
 
 header#headerBottom {
     width: 100%;
-    position: absolute;
+    position: fixed;
+    z-index: 999;
     bottom: 0;
     background-color: #333333;
     ul {
@@ -83,8 +84,8 @@ main {
         width: 100%;
         ul {
             display: flex;
-            padding: 5px 15px;
-            border-bottom: 1px solid #cccccc;
+            padding: 8px 15px;
+            /*   border-bottom: 1px solid red; */
             align-items: center;
             overflow-x: scroll;
             &::-webkit-scrollbar {
@@ -99,11 +100,11 @@ main {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    font-size: 10px;
+                    font-size: 11px;
                     color: #222222;
                     img {
-                        width: 50px;
-                        height: 50px;
+                        width: 55px;
+                        height: 55px;
                         border-radius: 50%;
                         object-fit: cover;
                         background: linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to right, #fcb045, #fd1d1d, #833ab4) border-box;
@@ -112,7 +113,6 @@ main {
                         background: -webkit-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to right, #fcb045, #fd1d1d, #833ab4) border-box;
                         background: -webkit-linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to right, #fcb045, #fd1d1d, #833ab4) border-box;
                         background: -o-linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to right, #fcb045, #fd1d1d, #833ab4) border-box;
-                        z-index: 1;
                         border: 2px solid transparent;
                         display: inline-block;
                         padding: 2px;
@@ -135,7 +135,7 @@ main {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        bottom: 10px;
+                        bottom: 15px;
                         right: 0;
                         label.miMistoria {
                             position: absolute;
@@ -154,6 +154,112 @@ main {
                         }
                     }
                 }
+            }
+        }
+    }
+    section#posts {
+        position: relative;
+        top: 100px;
+        width: 100%;
+        height: auto;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .post {
+            padding: 0 15px;
+            margin: 25px auto;
+            &:first-child {
+                margin-top: 0;
+            }
+            .top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 15px;
+                .left {
+                    display: flex;
+                    align-items: center;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        img {
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+                    }
+                    .text {
+                        margin-left: 10px;
+                        p {
+                            cursor: pointer;
+                            font-size: 12px;
+                            &:first-child {
+                                font-size: 14px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+                .right {
+                    img {
+                        width: 25px;
+                        height: 25px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .middle {
+                width: 100%;
+                height: 300px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+                }
+            }
+            .bottom {
+                margin-top: 20px;
+                .firstLine {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 10px;
+                    .left {
+                        img {
+                            width: 25px;
+                            height: 25px;
+                            margin-right: 10px;
+                        }
+                    }
+                    .center {
+                        .dots {
+                            display: flex;
+                            margin-right: 80px;
+                            span.dot {
+                                width: 5px;
+                                height: 5px;
+                                border-radius: 50%;
+                                background: #cccccc;
+                                margin-right: 6px;
+                                &:first-child {
+                                    background-color: #0095f6;
+                                }
+                            }
+                        }
+                    }
+                    .right {
+                        img {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+                .secondLine {}
+                .thirdLine {}
             }
         }
     }
