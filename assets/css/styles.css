@@ -156,6 +156,11 @@ main section#historias ul li a img {
      object-fit: cover;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff)) padding-box, -webkit-gradient(linear, left top, right top, from(#fcb045), color-stop(#fd1d1d), to(#833ab4)) border-box;
   background: linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to right, #fcb045, #fd1d1d, #833ab4) border-box;
+  background: -webkit-gradient(#ffffff, #ffffff) padding-box, -webkit-gradient(linear, left top, right top, from(#fcb045), color-stop(#fd1d1d), to(#833ab4)) border-box;
+  background: -webkit-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to right, #fcb045, #fd1d1d, #833ab4) border-box;
+  background: -o-linear-gradient(#ffffff, #ffffff) padding-box, -webkit-gradient(linear, left top, right top, from(#fcb045), color-stop(#fd1d1d), to(#833ab4)) border-box;
+  background: -o-linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to right, #fcb045, #fd1d1d, #833ab4) border-box;
+  z-index: 1;
   border: 2px solid transparent;
   display: inline-block;
   padding: 2px;

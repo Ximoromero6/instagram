@@ -106,8 +106,13 @@ main {
                         height: 50px;
                         border-radius: 50%;
                         object-fit: cover;
-                        background: linear-gradient(#ffffff, #ffffff) padding-box, /*this is your grey background*/
-                        linear-gradient(to right, #fcb045, #fd1d1d, #833ab4) border-box;
+                        background: linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to right, #fcb045, #fd1d1d, #833ab4) border-box;
+                        background: -moz-linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to right, #fcb045, #fd1d1d, #833ab4) border-box;
+                        background: -ms-linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to right, #fcb045, #fd1d1d, #833ab4) border-box;
+                        background: -webkit-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to right, #fcb045, #fd1d1d, #833ab4) border-box;
+                        background: -webkit-linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to right, #fcb045, #fd1d1d, #833ab4) border-box;
+                        background: -o-linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to right, #fcb045, #fd1d1d, #833ab4) border-box;
+                        z-index: 1;
                         border: 2px solid transparent;
                         display: inline-block;
                         padding: 2px;
