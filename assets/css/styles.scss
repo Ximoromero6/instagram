@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Sansita+Swashed:wght@400;600;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+}
+
+header#headerBottom {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #333333;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        li {
+            list-style: none;
+            a {
+                position: relative;
+                display: block;
+                padding: 15px;
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+                &::after {
+                    display: none;
+                    position: absolute;
+                    content: '';
+                    width: 30%;
+                    border-radius: 6px;
+                    height: 2px;
+                    background: #ffffff;
+                    bottom: 5px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+}
+
+header#headerTop {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-bottom: 1px solid #cccccc;
+    a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+        &.logo {
+            font-family: 'Sansita Swashed', sans-serif;
+            text-decoration: none;
+            color: #000000;
+            font-size: 22px;
+        }
+    }
+}
+
+main {
+    position: relative;
+    section#historias {
+        /* padding: 0 15px; */
+        position: absolute;
+        width: 100%;
+        ul {
+            display: flex;
+            padding: 5px 15px;
+            border-bottom: 1px solid #cccccc;
+            align-items: center;
+            overflow-x: scroll;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            li {
+                list-style: none;
+                margin-right: 20px;
+                position: relative;
+                a {
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font-size: 10px;
+                    color: #222222;
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+                &:first-child {
+                    position: relative;
+                    label.black {
+                        position: absolute;
+                        width: 15px;
+                        height: 15px;
+                        background: #ffffff;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        bottom: 10px;
+                        right: 0;
+                        label.miMistoria {
+                            position: absolute;
+                            display: flex;
+                            border-radius: 50%;
+                            color: #ffffff;
+                            justify-content: center;
+                            align-items: center;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            background: #0095f6;
+                            width: 10px;
+                            height: 10px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Sansita+Swashed:wght@400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+}
+
+header#headerBottom {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #333333;
+}
+
+header#headerBottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header#headerBottom ul li {
+  list-style: none;
+}
+
+header#headerBottom ul li a {
+  position: relative;
+  display: block;
+  padding: 15px;
+}
+
+header#headerBottom ul li a img {
+  width: 25px;
+  height: 25px;
+}
+
+header#headerBottom ul li a::after {
+  display: none;
+  position: absolute;
+  content: '';
+  width: 30%;
+  border-radius: 6px;
+  height: 2px;
+  background: #ffffff;
+  bottom: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+header#headerTop {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px;
+  border-bottom: 1px solid #cccccc;
+}
+
+header#headerTop a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+header#headerTop a img {
+  width: 20px;
+  height: 20px;
+}
+
+header#headerTop a.logo {
+  font-family: 'Sansita Swashed', sans-serif;
+  text-decoration: none;
+  color: #000000;
+  font-size: 22px;
+}
+
+main {
+  position: relative;
+}
+
+main section#historias {
+  /* padding: 0 15px; */
+  position: absolute;
+  width: 100%;
+}
+
+main section#historias ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 15px;
+  border-bottom: 1px solid #cccccc;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: scroll;
+}
+
+main section#historias ul::-webkit-scrollbar {
+  display: none;
+}
+
+main section#historias ul li {
+  list-style: none;
+  margin-right: 20px;
+  position: relative;
+}
+
+main section#historias ul li a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10px;
+  color: #222222;
+}
+
+main section#historias ul li a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main section#historias ul li:first-child {
+  position: relative;
+}
+
+main section#historias ul li:first-child label.black {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 10px;
+  right: 0;
+}
+
+main section#historias ul li:first-child label.black label.miMistoria {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  color: #ffffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #0095f6;
+  width: 10px;
+  height: 10px;
+  font-size: 12px;
+}
+/*# sourceMappingURL=styles.css.map */
